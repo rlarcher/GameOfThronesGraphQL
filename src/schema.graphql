@@ -18,4 +18,5 @@ type Character {
   mother: String
   spouse: Character
   titles: [String]
+  aliases: [String]
 }
