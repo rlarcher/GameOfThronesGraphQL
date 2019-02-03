@@ -1,0 +1,23 @@
+{
+  "name": "gotgql",
+  "version": "1.0.0",
+  "description": "GraphQL Layer in front of an API of Ice and Fire",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/tsc && node_modules/.bin/copyfiles src/schema.graphql dist && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/graphql": "^14.0.5",
+    "apollo-server": "^2.3.1",
+    "axios": "^0.18.0",
+    "copyfiles": "^2.1.0",
+    "dataloader": "^1.4.0",
+    "express": "^4.16.4",
+    "graphql-import": "^0.7.1",
+    "graphqlgen": "^0.6.0-rc2",
+    "import-graphql": "^1.0.1"
+  }
+}

@@ -1,0 +1,21 @@
+type Query {
+  "Find chacters by first or last name"
+  findCharacter(
+    "First name of character, not required"
+    firstName: String,
+    "Last name of character, not required"
+    lastName: String): [Character]!
+}
+
+type Character {
+  firstName: String
+  lastName: String
+  isAlive: Boolean
+  died: String
+  born: String
+  culture: String
+  father: String
+  mother: String
+  spouse: Character
+  titles: [String]
+}
